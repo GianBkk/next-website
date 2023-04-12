@@ -1,0 +1,73 @@
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.imageOverlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    opacity: 90%;
+    z-index: -99;
+}
+
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: -100;
+    filter: grayscale(1) blur(3px);
+}
+
+.profile{
+    min-width: 50%;
+    min-height: 100%;
+    max-height: auto;
+    z-index: -98;
+    object-fit:contain;
+}
+
+.backgroundgradiant{
+    position: absolute;
+    z-index: -97;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, black, transparent 88%);
+}
+
+.buttonLink{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 22rem;
+    height: 6rem;
+    border-radius: var(--border-radius);
+    bottom: 25%;
+}
+
+.buttonContainer{
+    color: black;
+    font-size: 2rem;
+}
+
+.head{
+    margin-top: 10%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.head h1 {
+    font-size: 8rem;
+    transform: translateX(-.5rem);
+    letter-spacing: 2rem;
+}
+
+.head h2 {
+    letter-spacing: .3rem;
+}
